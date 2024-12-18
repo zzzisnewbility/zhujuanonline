@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猪圈回忆</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>记录猪圈一起gay的照片</h1>
+            <p>纪念这段美好时光</p>
+        </div>
+    </header>
+
+    <section id="memories">
+        <div class="container">
+            <h2>上传猪圈的照片</h2>
+            <div class="upload-buttons">
+                <button onclick="selectTheme('travel')">旅行</button>
+                <button onclick="selectTheme('party')">聚会</button>
+                <button onclick="selectTheme('daily')">日常</button>
+            </div>
+
+            <!-- 文件上传控件 -->
+            <div id="file-upload-section" style="display:none;">
+                <input type="file" id="photo-input" accept="image/*" onchange="uploadPhoto()" />
+                <p>当前主题：<span id="current-theme">未选择</span></p>
+            </div>
+
+            <!-- 显示已上传的照片 -->
+            <div id="photo-gallery">
+                <h3>已上传的照片</h3>
+                <div id="photo-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 猪圈的回忆馆 | 由野猪、雨猪、度娘、蛤蟆、郑屠、黑奴、郁猪共同创造</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

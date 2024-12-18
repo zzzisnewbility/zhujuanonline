@@ -1,0 +1,107 @@
+/* 通用样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: #3f72af;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#file-upload-section {
+    margin-top: 20px;
+}
+
+#photo-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 每行显示六张图片 */
+    gap: 15px; /* 图片之间的间距 */
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.photo-wrapper {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.photo-wrapper img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 下载按钮 */
+a.download-btn {
+    background-color: #3f72af;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+a.download-btn:hover {
+    background-color: #2d5179;
+}
+
+/* 删除按钮 */
+button.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+button.delete-btn:hover {
+    background-color: darkred;
+}
+
+
